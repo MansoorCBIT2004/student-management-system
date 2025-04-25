@@ -9,7 +9,7 @@ const StudentList = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/students');
+      const response = await axios.get('https://student-management-system-7nnu.onrender.com/students');
       setStudents(response.data);
       setLoading(false);
     } catch (error) {
@@ -25,7 +25,7 @@ const StudentList = () => {
   const handleDelete = async (id) => {
     if (!window.confirm('Are you sure you want to delete this student?')) return;
     try {
-      await axios.delete(`http://localhost:5000/students/${id}`);
+      await axios.delete(`https://student-management-system-7nnu.onrender.com/students/${id}`);
       toast.success('Student deleted successfully');
       fetchStudents();
     } catch (error) {
