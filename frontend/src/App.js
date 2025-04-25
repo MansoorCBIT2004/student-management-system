@@ -19,13 +19,13 @@ function App() {
           color: 'white',
           flexWrap: 'wrap'
         }}>
-          <div style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+          <div style={{ fontSize: '2.2rem', fontWeight: 'bold' }}>
             Student Management
           </div>
           <div style={{ display: 'flex', gap: '15px' }}>
-            <Link to="/" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>Home</Link>
-            <Link to="/students/add" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>Add Student</Link>
-            <Link to="/students" style={{ color: 'white', textDecoration: 'none', fontWeight: '500' }}>Student List</Link>
+            <Link to="/" style={{ color: 'white', textDecoration: 'none', fontWeight: '700' }}>Home</Link>
+            <Link to="/students/add" style={{ color: 'white', textDecoration: 'none', fontWeight: '700' }}>Add Student</Link>
+            <Link to="/students" style={{ color: 'white', textDecoration: 'none', fontWeight: '700' }}>Student List</Link>
           </div>
         </nav>
         <ToastContainer />
