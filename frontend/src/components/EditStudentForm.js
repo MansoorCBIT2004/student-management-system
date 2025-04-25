@@ -20,7 +20,7 @@ const EditStudentForm = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/students/${id}`);
+        const response = await axios.get(`https://student-management-system-7nnu.onrender.com/students/${id}`);
         setFormData({
           student_id: response.data.student_id,
           name: response.data.name,
@@ -50,7 +50,7 @@ const EditStudentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/students/${id}`, {
+      await axios.put(`https://student-management-system-7nnu.onrender.com/students/${id}`, {
         student_id: formData.student_id,
         name: formData.name,
         email: formData.email,
