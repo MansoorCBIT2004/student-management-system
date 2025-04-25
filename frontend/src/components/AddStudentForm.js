@@ -28,7 +28,7 @@ const AddStudentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/students', {
+      await axios.post('https://student-management-system-7nnu.onrender.com', {
         student_id: formData.student_id,
         name: formData.name,
         email: formData.email,
