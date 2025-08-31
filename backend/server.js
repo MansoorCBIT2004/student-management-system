@@ -5,7 +5,8 @@ const studentRoutes = require('./routes/students');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://mdmansoor789456:eCFlQfVmRNAH8MII@cluster0.nu2cdie.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://mdmansoor789456:Man1234@cluster0.nu2cdie.mongodb.net/?retryWrites=true&w=majority';
+
 // Middleware
 app.use(cors());
 app.use(express.json());
