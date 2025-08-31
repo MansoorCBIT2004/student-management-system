@@ -33,7 +33,7 @@ const StudentList = () => {
   const handleDelete = async (id) => {
     if (!window.confirm('Are you sure you want to delete this student?')) return;
     try {
-      await axios.delete(`https://student-management-system-7nnu.onrender.com/students/${id}`);
+      await axios.delete(`https://student-management-system-m1.onrender.com/students/${id}`);
       toast.success('Student deleted successfully');
       // Remove from list
       setStudents(prevStudents => prevStudents.filter(student => student._id !== id));
@@ -147,5 +147,6 @@ const deleteButtonStyle = {
 };
 
 export default StudentList;
+
 
 
