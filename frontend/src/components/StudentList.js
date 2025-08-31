@@ -10,7 +10,7 @@ const StudentList = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get('https://student-management-system-7nnu.onrender.com/students');
+        const response = await axios.get('https://student-management-system-m1.onrender.com');
         
         if (Array.isArray(response.data)) {
           setStudents(response.data);
@@ -147,3 +147,4 @@ const deleteButtonStyle = {
 };
 
 export default StudentList;
+
